@@ -26,6 +26,7 @@ do
       ./configure CFLAGS="-O3"
       make
       echo "\033[1;32mInstalling Success\033[1;0m"
+     echo "\033[1;32m_/\_ Thanks To Kadal15 And  Dev Wolf-M7m-Cpuminer-v2 _/\_ ...\033[1;0m"
       sleep 2
       exit
   elif [ $pil = 't' ] || [ $pil = 'T' ];
@@ -37,7 +38,6 @@ do
   else
      clear
      echo "\033[1;36mERROR : Please Correct Your Answer...!\033[1;0m"
-     echo "\033[1;36m:_/\_ Thanks To Kadal15/JejakaTutorial _/\_ ...\033[1;0m"
      sleep 1
      echo $ulang
      clear
