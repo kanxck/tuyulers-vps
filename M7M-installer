@@ -1,0 +1,45 @@
+#!/bin/sh
+
+ulang='y'
+
+while [ $ulang = 'y' ];
+do
+  echo -n "\033[1;32mDo You Want To Install Wolf-M7m-Cpuminer-v2 ketik Y (Y/T) : \033[1;0m"
+  read pil;
+  if [ $pil = 'y' ] || [ $pil = 'Y' ];
+  then
+      clear
+      echo "\033[1;32mInstalling Library\033[1;0m"
+      sleep 2
+      apt update && apt upgrade -y
+      apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev libssl-dev
+      apt-get install -qqy automake
+      apt-get install -qqy libcurl4-openssl-dev
+      apt-get install -qqy make
+      echo "\033[1;32mCloning Reposity\033[1;0m"
+      sleep 2
+      git clone https://github.com/magi-project/wolf-m7m-cpuminer-V2.git
+      cd wolf-m7m-cpuminer-V2
+      echo "\033[1;32mInstalling Wolf-M7m-Cpuminer-v2\033[1;0m"
+      sleep 2
+      ./autogen.sh
+      ./configure CFLAGS="-O3"
+      make
+      echo "\033[1;32mInstalling Success\033[1;0m"
+      sleep 2
+      exit
+  elif [ $pil = 't' ] || [ $pil = 'T' ];
+  then
+     clear
+     echo "\033[1;31mExit.......!\033[1;0m"
+     sleep 2
+     exit
+  else
+     clear
+     echo "\033[1;36mERROR : Please Correct Your Answer...!\033[1;0m"
+     echo "\033[1;36m:_/\_ Thanks To Kadal15/JejakaTutorial _/\_ ...\033[1;0m"
+     sleep 1
+     echo $ulang
+     clear
+  fi
+done
