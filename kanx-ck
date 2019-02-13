@@ -4,7 +4,7 @@ ulang='y'
 
 while [ $ulang = 'y' ];
 do
-  echo -n "\033[1;32mDo You Want To Install Wolf-M7m-Cpuminer-v2 ketik Y (Y/T) : \033[1;0m"
+  echo -n "\033[1;32m Sriyus Kamu Mau Instal CpuMiner Kalau iya ketik Y Kalau Tidak Ketik T (Y/T) : \033[1;0m"
   read pil;
   if [ $pil = 'y' ] || [ $pil = 'Y' ];
   then
@@ -16,17 +16,16 @@ do
       apt-get install -qqy automake
       apt-get install -qqy libcurl4-openssl-dev
       apt-get install -qqy make
-      echo "\033[1;32mCloning Reposity\033[1;0m"
+      echo "\033[1;32mCloning CpuMiner\033[1;0m"
       sleep 2
       git clone https://github.com/magi-project/wolf-m7m-cpuminer-V2.git
       cd wolf-m7m-cpuminer-V2
-      echo "\033[1;32mInstalling Wolf-M7m-Cpuminer-v2\033[1;0m"
+      echo "\033[1;32mGasken Install CpuMiner\033[1;0m"
       sleep 2
       ./autogen.sh
       ./configure CFLAGS="-O3"
       make
-      echo "\033[1;32mInstalling Success\033[1;0m"
-     echo "\033[1;32m_/\_ Thanks To Kadal15 And  Dev Wolf-M7m-Cpuminer-v2 _/\_ ...\033[1;0m"
+      echo "\033[1;32mInstall Success Gaes\033[1;0m"
       sleep 2
       exit
   elif [ $pil = 't' ] || [ $pil = 'T' ];
