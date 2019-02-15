@@ -6,7 +6,7 @@ Dash
 
 Litecoin
 
-install
+######   install   ######
 
 sudo su
 
