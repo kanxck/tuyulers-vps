@@ -1,7 +1,14 @@
 Mining menggunakan vps 
+
 Bitcoins
+
 Dash
+
 Litecoin
+
+install
+
+sudo su
 
 git clone https://github.com/kanxck/tuyulers-vps.git
 
