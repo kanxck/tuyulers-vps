@@ -1,4 +1,4 @@
-Mining menggunakan vps 
+# Mining menggunakan vps 
 
 Bitcoins
 
@@ -6,7 +6,7 @@ Dash
 
 Litecoin
 
-######   install   ######
+# cara install
 
 sudo su
 
